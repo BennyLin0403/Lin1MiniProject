@@ -24,10 +24,10 @@ public class TipCalculator {
         tipPerPerson = totalTipAmount / totalPeople;
         totalPerPerson = (totalBill / totalPeople);
 
-        System.out.println("The total tip amount is: " + df.format(totalTipAmount));
-        System.out.println("The Total Bill including tip is: " + df.format(totalBill));
-        System.out.println("The tip per person is: " + df.format(tipPerPerson));
-        System.out.println("The total per person is: " + df.format(totalPerPerson));
+        System.out.println("The total tip amount is: " + df.format(totalTipAmount + 0.005));
+        System.out.println("The Total Bill including tip is: " + df.format(totalBill + 0.005));
+        System.out.println("The tip per person is: " + df.format(tipPerPerson + 0.005));
+        System.out.println("The total per person is: " + df.format(totalPerPerson + 0.005));
 
     }
 }
